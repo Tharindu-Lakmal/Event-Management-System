@@ -1,0 +1,146 @@
+.card-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 72px;
+    margin: 80px 0;
+}
+
+.card-container .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 100%;
+    background-color: var(--bg-card);
+}
+
+.card-container .card img {
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+    padding: 12px 24px 24px;
+}
+
+.card-details .details-top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-details .details-top h3 {
+    font-size: var(--font-small-e);
+    color: var(--text-normal);
+}
+
+.details-middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ldo {
+    position: relative;
+    width: 50%;
+    max-width: 190px;
+    overflow-wrap: break-word;
+}
+
+.label {
+    font-size: 14px;
+    color: var(--text-extra-light);
+}
+
+.tag-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tag-container .tags {
+    color: var(--bg-hero);
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #e76f51;
+}
+
+
+
+/* Responsive style */
+
+  @media only screen and (min-width:768px) {
+    
+    .card-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+        gap: 64px;
+    }
+
+    .card-details .details-top {
+        gap: 24px;
+    }
+    
+    .card-details .details-top h3 {
+        font-size: var(--font-medium);
+    }
+  
+  }
+  
+  
+  @media only screen and (min-width:992px) {
+    
+    .inner-container {
+      width: 90%;
+    }
+    
+    .img-wrapper {
+        height: 380px;
+        overflow: hidden;
+    }
+
+    .card-container .card img {
+        width: 100%;
+        min-height: 380px;
+        object-fit: fill;
+    }
+
+    .details-middle {
+        
+        flex-wrap: nowrap;
+        gap: 12px;
+    }
+    
+    .ldo {
+        max-width: 190px;
+        overflow-wrap: break-word;
+    }
+
+  }
+  
+  @media only screen and (min-width:1200px) {
+    
+    .inner-container {
+      width: 80%;
+    }
+    
+  }
+  
+  @media only screen and (min-width:1400px) {
+  
+    .container {
+      max-width: 1920px;
+    }
+    
+    .inner-container {
+    }
+  
+  }
