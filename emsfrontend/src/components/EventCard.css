@@ -12,12 +12,17 @@
     gap: 12px;
     max-width: 100%;
     background-color: var(--bg-card);
+    cursor: pointer;
 }
 
 .card-container .card img {
     position: relative;
     width: 100%;
     max-width: 780px;
+    transition: scale 0.3s linear;
+}
+.card-container .card:is(:hover, :focus-visible) img {
+    scale: 1.08;
 }
 
 .card-details {
@@ -63,6 +68,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 12px;
+    bottom: 0;
 }
 
 .tag-container .tags {
