@@ -23,7 +23,7 @@ input:-webkit-autofill {
 }
 
 .inputevent .form-data {
-    border-bottom: 1px solid var(--text-light);
+    border-bottom: 0.5px solid rgba(22, 26, 32, 0.6);
 }
 
 .inputevent form {
@@ -39,7 +39,6 @@ input:-webkit-autofill {
     flex-direction: row;
     gap: 28px;
     padding: 0 0 32px;
-    border-bottom: 1px solid var(--stroke-color-light);
 }
 
 .inputevent .form-data {
@@ -58,7 +57,7 @@ input:-webkit-autofill {
 
 .inputevent .form-data label {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.6px;
 }
 
@@ -181,6 +180,10 @@ input:-webkit-autofill {
     .contact-container {
         margin: 0 160px;
         padding-block-start: 140px;
+    }
+
+    .contact-content {
+        width: 900px;
     }
 
     .contact-header h3 span {

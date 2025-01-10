@@ -9,3 +9,11 @@ export const listEvents = () => {
 export const createEvent = (event) => {
     return axios.post(REST_API_BASE_URL, event);
 }
+
+export const getEvent = (eventId) => {
+    return axios.get(REST_API_BASE_URL + '/' + eventId);
+}
+
+export const updateEvent = (eventId, event) => {
+    return axios.put(REST_API_BASE_URL + '/' + eventId, event);
+}

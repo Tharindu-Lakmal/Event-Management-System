@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './EventCard.css'
-import { cardData } from '../assets'
 import { listEvents } from '../services/EventService'
 
 const EventCard = () => {
@@ -45,18 +44,14 @@ const EventCard = () => {
                                         <p className="ldo-title">{item.organizer}</p>
                                     </div>
                                     <div className="ldo">
-                                        <p className="label">Fill:</p>
-                                        <p className="ldo-title">{item.remaining_capacity}/{item.capacity}</p>
+                                        <p className="label">Capacity:</p>
+                                        <p className="ldo-title">{item.capacity}</p>
                                     </div>
                                 </div>
                                 
-                                {/* <div className="tag-container">
-                                    {item.tags.map((tag, tagindex) => {
-                                        return (
-                                            <p className="tags" key={tagindex}>{tag}</p>
-                                        )
-                                    })}
-                                </div> */}
+                                <div className="tag-container">
+                                    <p className="tags" key={index}>{item.tags}</p>
+                                </div>
                                 
                             </div>
                         </div>
