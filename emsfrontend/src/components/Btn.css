@@ -1,14 +1,13 @@
 .active-btn {
-    padding: 24px 48px;
+    /* padding: 24px 48px; */
     border: none;
     border-radius: 50px;
     font-size: 16px;
     letter-spacing: 0.6px;
-    background-color: #e76f51;
     color: var(--bg-hero);
     cursor: pointer;
 }
 
 .active-btn:is(:hover, :focus-visible) {
-    background-color: rgb(231, 111, 81, 0.9);
+    background-color: rgb(0, 125, 251);
 }

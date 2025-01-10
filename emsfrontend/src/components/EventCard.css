@@ -63,21 +63,6 @@
     color: var(--text-extra-light);
 }
 
-.tag-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px;
-    bottom: 0;
-}
-
-.tag-container .tags {
-    color: var(--bg-hero);
-    padding: 8px 16px;
-    border-radius: 20px;
-    background-color: #e76f51;
-}
-
 
 
 /* Responsive style */
