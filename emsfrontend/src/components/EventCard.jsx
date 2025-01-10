@@ -1,22 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './EventCard.css'
 import { cardData } from '../assets'
+import { listEvents } from '../services/EventService'
 
 const EventCard = () => {
+
+    const [events, setEvents] = useState([])
+
+    useEffect(() => {
+        listEvents().then((response) => {
+            setEvents(response.data);
+        }).catch(error => {
+            console.error(error);
+        })
+    })
+
   return (
 
             <div className="card-container">
-                {cardData.map((item, index) => {
+                {events.map((item, index) => {
                     return (
                         <div className="card" key={index}>
                             <div className="img-wrapper">
-                                <img src={item.image} alt="" />
+                                <img src={item.imagePath} alt="" />
                             </div>
             
                             <div className="card-details">
                                 <div className="details-top">
-                                    <h3 className="name">{item.name}</h3>
-                                    <p>{item.description}</p>
+                                    <h3 className="name">{item.event_name}</h3>
+                                    <p>{item.event_description}</p>
                                 </div>
             
                                 <div className="details-middle">
@@ -30,7 +42,7 @@ const EventCard = () => {
                                     </div>
                                     <div className="ldo">
                                         <p className="label">Organized by:</p>
-                                        <p className="ldo-title">{item.created_by}</p>
+                                        <p className="ldo-title">{item.organizer}</p>
                                     </div>
                                     <div className="ldo">
                                         <p className="label">Fill:</p>
@@ -38,13 +50,13 @@ const EventCard = () => {
                                     </div>
                                 </div>
                                 
-                                <div className="tag-container">
+                                {/* <div className="tag-container">
                                     {item.tags.map((tag, tagindex) => {
                                         return (
                                             <p className="tags" key={tagindex}>{tag}</p>
                                         )
                                     })}
-                                </div>
+                                </div> */}
                                 
                             </div>
                         </div>

@@ -15,7 +15,7 @@ const Navbar = () => {
                 <ul className="nav-lists">
                     <NavLink to='/'><li className="list">Events</li></NavLink>
                     <NavLink to='/event-details'><li className="list">Event Details</li></NavLink>
-                    <NavLink to='/event-creation'><li className="list">Create</li></NavLink>
+                    <NavLink to='/event-creation'><li className="list">Add</li></NavLink>
                     <NavLink to='/event-update'><li className="list">Upload</li></NavLink>
                 </ul>
             </nav>

@@ -1,0 +1,266 @@
+.inputevent h1, h2, h3, p, a, span, label, input, button {
+    color: var(--text-light);
+}
+
+::placeholder {
+    color: var(--text-light-extra);
+    opacity: 0.4;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+input:-webkit-autofill {
+    background-color: transparent;
+    border: none;
+}
+
+.inputevent .form-data {
+    border-bottom: 1px solid var(--text-light);
+}
+
+.inputevent form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-block-end: 120px;
+}
+
+.inputevent .form-input {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    padding: 0 0 32px;
+    border-bottom: 1px solid var(--stroke-color-light);
+}
+
+.inputevent .form-data {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-block-start: -2px;
+}
+
+.inputevent .form-input .list-number {
+    color: var(--text-light-extra);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.inputevent .form-data label {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+
+.inputevent .form-data input,
+.inputevent .form-data textarea {
+    color: var(--text-light);
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+}
+/* ////////////////////// */
+
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--text-dark);
+}
+
+.contact-content {
+    margin-block: 40px;
+}
+
+.contact-container {
+    margin: 0 20px;
+    padding: 80px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact .contact-header {
+    border-bottom: 1px solid var(--stroke-color);
+    padding-block-end: 36px;
+    margin-block-start: 80px;
+}
+
+.contact-header h3 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-header h3 span {
+    font-size: 36px;
+    color: var(--text-light);
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+
+.contact-header h3 img {
+    width: 36px;
+}
+
+/* form--------------- */
+
+
+.contact-form {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    padding-block-start: 48px;
+    border-bottom: 1px solid var(--stroke-color-light);
+}
+
+.error-message {
+    color: #e76f51;
+    margin-block-end: 40px;
+    letter-spacing: 0.6px;
+}
+
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width:540px) {
+
+    .contact-header h3 span {
+        font-size: 42px;
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+    
+    .contact-container {
+        margin: 0 120px;
+        padding-block-start: 120px;
+    }
+
+    .contact-form {
+        max-width: 480px;
+    }
+
+    .contact-header h3 {
+        gap: 24px;
+    }
+
+    .contact-header h3 span {
+        font-size: 46px;
+    }
+
+    .contact-header h3 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-container {
+        gap: 80px;
+    }
+    
+    .contact .contact-header {
+        padding-block-end: 48px;
+    }
+}
+
+
+@media only screen and (min-width:992px) {
+    
+    .contact-container {
+        margin: 0 160px;
+        padding-block-start: 140px;
+    }
+
+    .contact-header h3 span {
+        font-size: 58px;
+    }
+
+    .contact-header h3 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-container {
+        gap: 100px;
+    }
+    
+    .contact .contact-header {
+        padding-block-end: 58px;
+    }
+
+
+    .contact-form {
+        max-width: 680px;
+        padding-block-start: 80px;
+    }
+
+    .contact-form form {
+        gap: 36px;
+        padding-block-end: 220px;
+    }
+    
+    .contact-form .form-input {
+        gap: 48px;
+        padding: 0 0 48px;
+    }
+    
+    .contact-form .form-data {
+        gap: 14px;
+    }
+    
+    .contact-form .form-input .list-number {
+        font-size: 14px;
+        margin-block-start: 4px;
+    }
+    
+    .contact-form .form-data label {
+        font-size: 24px;
+    }
+    
+    .contact-form .form-data input,
+    .contact-form .form-data textarea {
+        font-size: 24px;
+    }
+
+    ::placeholder {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+    
+    .contact-container {
+        margin: 0 180px;
+        padding-block-start: 180px;
+    }
+
+    .contact-header h3 span {
+        font-size: 72px;
+    }
+
+    .contact-header h3 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-container {
+        gap: 120px;
+    }
+    
+    .contact .contact-header {
+        padding-block-end: 64px;
+    }
+}

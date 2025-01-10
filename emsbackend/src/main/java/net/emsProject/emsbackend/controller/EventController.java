@@ -12,6 +12,7 @@ import java.util.List;
 
 // annotating class with ADD rest control annotation,
 // the class become a spring rest controller and class handle HTTP request
+@CrossOrigin("*")
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/events") // defining a base url for all REST API
@@ -62,7 +63,7 @@ public class EventController {
     }
 
     // Build Image Upload Event REST API
-    @PostMapping("{id}") // /upload-image
+    @PostMapping("{id}/upload-image") // /upload-image
     public ResponseEntity<String> uploadImage(
             @PathVariable("id") Long eventId,
             @RequestParam("file") MultipartFile file) {
