@@ -1,9 +1,9 @@
 .navbar {
     position: relative;
-    background-color: #e76f51;
+    background-color: var(--bg-card);
     padding: 12px 0;
     z-index: 100;
-    border-bottom: 0.3px solid #e9c46a;
+    border-bottom: 0.3px solid var(--text-extra-light);
 }
 
 .inner-container {
@@ -18,7 +18,7 @@
 }
 
 .navbar .logo img {
-    width: 36px;
+    width: auto;
 }
 
 .nav-lists {
@@ -28,7 +28,24 @@
 }
 
 .nav-lists li {
-    color: var(--bg-hero);
+    position: relative;
+    color: var(--text-normal);
+    font-weight: 500;
+}
+
+.nav-lists .list::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--text-normal);
+    transition: 0.4s linear;
+}
+
+.nav-lists .list:is(:hover, :focus-visible)::after {
+    width: 100%;
 }
 
 

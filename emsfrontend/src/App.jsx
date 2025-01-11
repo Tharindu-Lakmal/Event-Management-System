@@ -6,6 +6,7 @@ import EventCreation from './pages/EventCreation'
 import EventUpdate from './pages/EventUpdate'
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
         <Route path="/event-update" element={<EventUpdate />} />
         <Route path="/edit-event/:id" element={<EventCreation />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

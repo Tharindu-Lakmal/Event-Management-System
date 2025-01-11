@@ -1,13 +1,23 @@
 .ListEventMain {
     display: flex;
+    align-items: center;
+    height: 65vh;
+    background: url("/Hero.jpg") no-repeat center;
+    background-size: cover;
+
+    /* background-color: #e76f51; */
+    text-align: center;
+}
+
+.main {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    width: 100%; 
+    padding: 32px 0;
     gap: 24px;
-    width: 100%;
-    height: 65vh;
-    background-color: #e76f51;
-    text-align: center;
+    background-color: rgba(22, 26, 32, 0.6);
 }
 
 .ListEventMain .main-headng {

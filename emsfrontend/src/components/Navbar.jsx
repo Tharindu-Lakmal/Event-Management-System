@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="inner-container">
 
             <div className="logo">
-                <img src="/logo.png" alt="" />
+            <NavLink to='/'><img src="/newlogo.png" alt="" /></NavLink>
             </div>
 
             <nav>
@@ -16,7 +16,7 @@ const Navbar = () => {
                     <NavLink to='/'><li className="list">Events</li></NavLink>
                     <NavLink to='/event-details'><li className="list">Event Details</li></NavLink>
                     <NavLink to='/event-creation'><li className="list">Add</li></NavLink>
-                    <NavLink to='/event-update'><li className="list">Upload</li></NavLink>
+                    <NavLink to='/event-update'><li className="list">Update</li></NavLink>
                 </ul>
             </nav>
 
