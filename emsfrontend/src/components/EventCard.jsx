@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import './EventCard.css'
 import { listEvents } from '../services/EventService'
+import { NavLink } from 'react-router-dom'
 
 const EventCard = () => {
 
-    const [events, setEvents] = useState([])
+    const [events, setEvents] = useState([]);
 
     useEffect(() => {
         listEvents().then((response) => {
             setEvents(response.data);
         }).catch(error => {
             console.error(error);
+            alert("Data is not loading...")
         })
     })
 
@@ -19,6 +21,7 @@ const EventCard = () => {
     <div className="card-container">
         {events.map((item, index) => {
             return (
+                <NavLink to={`/event-detail/${item?.id}`}>
                 <div className="card" key={index}>
                     <div className="img-wrapper">
                         <img src={item.imagePath} alt="image is not loaded!" />
@@ -55,6 +58,7 @@ const EventCard = () => {
                         
                     </div>
                 </div>
+                </NavLink>
             )
         })}
     </div>
