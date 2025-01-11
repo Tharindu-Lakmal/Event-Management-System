@@ -88,3 +88,13 @@
 ---
 
 ### Test the Application Locally
+
+---
+
+### ScreenShots
+
+<img src="https://github.com/Tharindu-Lakmal/Tharindu-Lakmal/blob/main/images/listEvent.png" alt="html5" width="600"/> 
+<img src="https://github.com/Tharindu-Lakmal/Tharindu-Lakmal/blob/main/images/eventDetail2.png" alt="html5" width="600"/> 
+<img src="https://github.com/Tharindu-Lakmal/Tharindu-Lakmal/blob/main/images/addEvent.png" alt="html5" width="600"/> 
+<img src="https://github.com/Tharindu-Lakmal/Tharindu-Lakmal/blob/main/images/updateEvent.png" alt="html5" width="600"/>
+<img src="https://github.com/Tharindu-Lakmal/Tharindu-Lakmal/blob/main/images/updateDelete.png" alt="html5" width="600"/> 
