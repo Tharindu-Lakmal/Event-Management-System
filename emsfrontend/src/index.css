@@ -42,7 +42,6 @@ p, li, a {
   color: var(--text-light);
   font-size: var(--font-extra-small);
   letter-spacing: 0.5px;
-  line-height: 22px;
 }
 
 a {
