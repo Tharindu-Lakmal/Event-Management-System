@@ -11,7 +11,7 @@ const EventUpdate = () => {
           <div className="updatecard-content">
             <div className="contact-header">
               <h3>
-                <span>Update Events</span>
+                <span>Update/Delete Events</span>
               </h3>
             </div>
 

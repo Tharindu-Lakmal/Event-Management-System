@@ -27,12 +27,24 @@
     font-size: var(--font-small);
 }
 
+.update-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-block-start: 16px;
+}
+
+
 
 @media only screen and (min-width:768px) {
     
     .updatecards .updatecard {
         flex-direction: row;
         align-items: center;
+    }
+
+    .updatecards {
+        margin-block-start: 80px;
     }
     
     .middle {
@@ -41,6 +53,10 @@
 
     .updatecards .updatecard-header {
         width: 400px;
+    }
+
+    .update-btn {
+        margin-block-start: 0;
     }
     
 }

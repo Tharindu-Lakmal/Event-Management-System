@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --bg-card: #e9c46a;
-  --bg-background: rgb(227, 231, 230);
+  --bg-card: rgb(242, 242, 242); 
   --bg-hero: rgb(227, 231, 230);
 
   --text-normal: rgb(22, 26, 32);
@@ -31,7 +30,12 @@
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
-  background-color: var(--bg-background);
+  background-color: var(--bg-hero);
+}
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(22, 26, 32);
 }
 
 p, li, a {

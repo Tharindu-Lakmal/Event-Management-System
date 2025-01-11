@@ -48,15 +48,6 @@ const EventCreation = () => {
       setErrorMessage(""); 
     };
 
-    // const validateForm = () => {
-    //   for (const key in inputValue) {
-    //     if (!inputValue[key].trim()) {
-    //       return false;
-    //     }
-    //   }
-    //   return true;
-    // };
-
     const validateForm = () => {
       return Object.values(inputValue).every(value => value?.toString().trim() !== "");
     };

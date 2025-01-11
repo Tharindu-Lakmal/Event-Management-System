@@ -4,15 +4,17 @@ import './ListEventMain.css'
 const ListEventMain = () => {
   return (
     <div className='container ListEventMain'>
+        <div className="main">
         <h1 className='main-headng'>Your All-In-One Event Management Solution</h1>
         <p className="main-text">
-            From creating memorable experiences to tracking every detail.
+          Your Ultimate Destination for Seamless Event Planning and Discovery.
         </p>
 
         <div className="dots">
             <div className="dot"></div>
             <div className="dot"></div>
             <div className="dot"></div>
+        </div>
         </div>
     </div>
   )

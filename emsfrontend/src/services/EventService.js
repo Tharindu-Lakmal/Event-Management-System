@@ -17,3 +17,7 @@ export const getEvent = (eventId) => {
 export const updateEvent = (eventId, event) => {
     return axios.put(REST_API_BASE_URL + '/' + eventId, event);
 }
+
+export const deleteEvent = (eventId) => {
+    return axios.delete(REST_API_BASE_URL + '/' + eventId);
+}
