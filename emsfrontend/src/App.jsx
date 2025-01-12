@@ -17,6 +17,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<ListEvent />} />
+        <Route path='/event-details' element={<EventDetail />} />
         <Route path='/event-detail/:id' element={<EventDetail />} />
         <Route path="/event-creation" element={<EventCreation />} />
         <Route path="/event-update" element={<EventUpdate />} />
