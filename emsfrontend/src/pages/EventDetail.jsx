@@ -16,7 +16,15 @@ const EventDetail = () => {
       })
   }, [])
 
-  const selectEvent = events.find((item) => item.id === parseInt(id, 10));
+  let selectEvent;
+
+  if (id) {
+    selectEvent = events.find((item) => item.id === parseInt(id, 10));
+  } else {
+    selectEvent = events[1];
+  }
+
+  // const selectEvent = events.find((item) => item.id === parseInt(id, 10));
 
 
   // Show a loading state or fallback content
